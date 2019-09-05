@@ -1,0 +1,40 @@
+{
+  "name": "ovh-sdk",
+  "version": "0.0.1",
+  "description": "Full OVH API call library",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "node --experimental-modules models.mjs",
+    "build": "tsc",
+    "docs": "typedoc --ignoreCompilerErrors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/miton18/node-ovh-sdk.git"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/@miton18"
+  },
+  "keywords": [
+    "ovh",
+    "sdk",
+    "api"
+  ],
+  "author": "Rémi Collignon <remi+npm@collignon-ducret.fr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/miton18/node-ovh-sdk/issues"
+  },
+  "homepage": "https://github.com/miton18/node-ovh-sdk#readme",
+  "devDependencies": {
+    "@types/node-fetch": "^2.5.0",
+    "typedoc": "^0.15.0",
+    "typedoc-plugin-nojekyll": "^1.0.1",
+    "typescript": "^3.6.2"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  }
+}
